@@ -1,0 +1,24 @@
+:root {
+  --bg: #0a0a12;
+  --surface: #161624;
+  --text: #f4f4fb;
+  --text2: #a3a3bd;
+  --accent: #8c7bff;
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: light) {
+  :root { --bg: #f7f6fc; --surface: #ffffff; --text: #15142a; --text2: #55557a; --accent: #5b47e6; color-scheme: light; }
+}
+body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 -apple-system, system-ui, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+a { color: var(--accent); }
+h1 { font-size: 30px; line-height: 1.2; margin: 18px 0 4px; }
+h2 { font-size: 19px; margin: 28px 0 6px; }
+p, li { color: var(--text2); }
+.date { font-size: 14px; }
+hr { border: 0; border-top: 1px solid rgba(127, 127, 160, 0.3); margin: 48px 0 8px; }
+.home { text-align: center; padding-top: 72px; }
+.logo { border-radius: 22px; }
+.lead { font-size: 18px; max-width: 520px; margin: 8px auto; }
+.lead.de { font-size: 16px; }
+nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 22px; margin-top: 28px; font-weight: 600; }
