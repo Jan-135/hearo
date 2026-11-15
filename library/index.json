@@ -1,0 +1,159 @@
+{
+ "version": 1,
+ "songs": [
+  {
+   "id": "demo-ode-to-joy",
+   "title": "Ode to Joy",
+   "artist": "Ludwig van Beethoven",
+   "file": "demo-ode-to-joy.pianosong",
+   "difficulty": 2.7,
+   "duration": 38.8,
+   "notes": 86,
+   "demo": true,
+   "credit": "Built-in lesson, public domain"
+  },
+  {
+   "id": "demo-fur-elise",
+   "title": "Für Elise (theme)",
+   "artist": "Ludwig van Beethoven",
+   "file": "demo-fur-elise.pianosong",
+   "difficulty": 3.5,
+   "duration": 56.6,
+   "notes": 143,
+   "demo": true,
+   "credit": "Built-in lesson, public domain"
+  },
+  {
+   "id": "demo-minuet-in-g",
+   "title": "Minuet in G",
+   "artist": "Christian Petzold",
+   "file": "demo-minuet-in-g.pianosong",
+   "difficulty": 3.7,
+   "duration": 26.2,
+   "notes": 99,
+   "demo": true,
+   "credit": "Built-in lesson, public domain"
+  },
+  {
+   "id": "bach-prelude-c",
+   "title": "Prelude in C major (WTC I)",
+   "artist": "Johann Sebastian Bach",
+   "file": "bach-prelude-c.pianosong",
+   "difficulty": 4.0,
+   "duration": 140.0,
+   "notes": 549,
+   "demo": false,
+   "credit": "Mutopia Project, public domain"
+  },
+  {
+   "id": "satie-gymnopedie-1",
+   "title": "Gymnopédie No. 1",
+   "artist": "Erik Satie",
+   "file": "satie-gymnopedie-1.pianosong",
+   "difficulty": 4.2,
+   "duration": 141.0,
+   "notes": 282,
+   "demo": false,
+   "credit": "Mutopia Project, public domain"
+  },
+  {
+   "id": "burgmuller-pastorale",
+   "title": "La Pastorale (Op. 100 No. 3)",
+   "artist": "Friedrich Burgmüller",
+   "file": "burgmuller-pastorale.pianosong",
+   "difficulty": 4.4,
+   "duration": 51.0,
+   "notes": 355,
+   "demo": false,
+   "credit": "Mutopia Project, public domain"
+  },
+  {
+   "id": "chopin-prelude-4",
+   "title": "Prelude in E minor (Op. 28 No. 4)",
+   "artist": "Frédéric Chopin",
+   "file": "chopin-prelude-4.pianosong",
+   "difficulty": 4.8,
+   "duration": 108.2,
+   "notes": 600,
+   "demo": false,
+   "credit": "Mutopia Project, public domain"
+  },
+  {
+   "id": "burgmuller-candeur",
+   "title": "La Candeur (Op. 100 No. 1)",
+   "artist": "Friedrich Burgmüller",
+   "file": "burgmuller-candeur.pianosong",
+   "difficulty": 5.1,
+   "duration": 36.3,
+   "notes": 241,
+   "demo": false,
+   "credit": "Mutopia Project, public domain"
+  },
+  {
+   "id": "debussy-clair-de-lune",
+   "title": "Clair de Lune",
+   "artist": "Claude Debussy",
+   "file": "debussy-clair-de-lune.pianosong",
+   "difficulty": 5.6,
+   "duration": 322.5,
+   "notes": 1468,
+   "demo": false,
+   "credit": "Mutopia Project, public domain"
+  },
+  {
+   "id": "beethoven-fur-elise",
+   "title": "Für Elise (complete)",
+   "artist": "Ludwig van Beethoven",
+   "file": "beethoven-fur-elise.pianosong",
+   "difficulty": 6.4,
+   "duration": 130.4,
+   "notes": 905,
+   "demo": false,
+   "credit": "Mutopia Project, public domain"
+  },
+  {
+   "id": "burgmuller-arabesque",
+   "title": "L'Arabesque (Op. 100 No. 2)",
+   "artist": "Friedrich Burgmüller",
+   "file": "burgmuller-arabesque.pianosong",
+   "difficulty": 6.7,
+   "duration": 26.1,
+   "notes": 283,
+   "demo": false,
+   "credit": "Mutopia Project, public domain"
+  },
+  {
+   "id": "chopin-prelude-20",
+   "title": "Prelude in C minor (Op. 28 No. 20)",
+   "artist": "Frédéric Chopin",
+   "file": "chopin-prelude-20.pianosong",
+   "difficulty": 6.7,
+   "duration": 74.3,
+   "notes": 286,
+   "demo": false,
+   "credit": "Mutopia Project, public domain"
+  },
+  {
+   "id": "debussy-arabesque-1",
+   "title": "Première Arabesque",
+   "artist": "Claude Debussy",
+   "file": "debussy-arabesque-1.pianosong",
+   "difficulty": 7.0,
+   "duration": 176.2,
+   "notes": 1448,
+   "demo": false,
+   "credit": "Mutopia Project, public domain"
+  },
+  {
+   "id": "chopin-prelude-7",
+   "title": "Prelude in A major (Op. 28 No. 7)",
+   "artist": "Frédéric Chopin",
+   "file": "chopin-prelude-7.pianosong",
+   "difficulty": 7.8,
+   "duration": 24.0,
+   "notes": 168,
+   "demo": false,
+   "credit": "Mutopia Project, public domain"
+  }
+ ]
+}
