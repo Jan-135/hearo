@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hearo – Battle</title>
+<meta name="robots" content="noindex">
+<meta property="og:title" content="Hearo · Battle">
+<meta property="og:description" content="Ear training against friends: intervals, chords, melodies and rhythms.">
+<meta property="og:image" content="https://jan-135.github.io/hearo/icon.png">
+<link rel="icon" href="../icon.png">
+<link rel="stylesheet" href="../style.css">
+<style>
+  .join { text-align: center; padding-top: 56px; max-width: 420px; }
+  .join .code { font-size: 44px; font-weight: 900; letter-spacing: 8px; margin: 6px 0 2px; color: var(--text); }
+  .btn { display: block; padding: 14px 18px; border-radius: 999px; font-weight: 700; text-decoration: none; margin-top: 12px; }
+  .btn.primary { background: var(--accent); color: #fff; }
+  .btn.store { background: var(--surface); color: var(--text); border: 1px solid rgba(127, 127, 160, 0.3); }
+  .stores { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .hint { font-size: 14px; margin-top: 18px; }
+</style>
+</head>
+<body>
+<!-- A battle invitation (UI lab launch.html, A): https://jan-135.github.io/hearo/join/#4821.
+     "Open in Hearo" opens hearo://join/4821 (the apps take the code); without the app the store buttons. -->
+<main class="join">
+  <img class="logo" src="../icon.png" alt="" width="84" height="84">
+  <h1 id="title">You're invited to a battle</h1>
+  <p id="lead">Ear training against friends: who recognises intervals, chords, melodies and rhythms faster?</p>
+  <div id="room" hidden>
+    <p id="codeLabel" style="margin: 18px 0 0">Room code</p>
+    <div class="code" id="code"></div>
+  </div>
+  <a class="btn primary" id="open" href="#">Open in Hearo</a>
+  <div class="stores">
+    <a class="btn store" href="https://play.google.com/store/apps/details?id=com.janferber.eartrainer">Google Play</a>
+    <a class="btn store" href="https://apps.apple.com/app/id6835901422">App Store</a>
+  </div>
+  <p class="hint" id="hint">No Hearo yet? Install it, open Battle and join with the code.</p>
+</main>
+<script>
+  const code = (location.hash.match(/\d{4}/) || [])[0];
+  const de = (navigator.language || '').toLowerCase().startsWith('de');
+  const t = de ? {
+    title: 'Du bist zum Battle eingeladen', lead: 'Gehörbildung gegen Freunde: Wer erkennt Intervalle, Akkorde, Melodien und Rhythmen schneller?',
+    codeLabel: 'Raumcode', open: 'In Hearo öffnen', hint: 'Noch kein Hearo? Installiere es, öffne Battle und tritt mit dem Code bei.',
+  } : null;
+  if (t) {
+    document.documentElement.lang = 'de';
+    for (const [id, text] of Object.entries(t)) document.getElementById(id).textContent = text;
+  }
+  const open = document.getElementById('open');
+  if (code) {
+    document.getElementById('room').hidden = false;
+    document.getElementById('code').textContent = code;
+    const store = 'https://play.google.com/store/apps/details?id=com.janferber.eartrainer';
+    // Android: an intent link falls back to the store when Hearo isn't installed
+    open.href = /android/i.test(navigator.userAgent)
+      ? `intent://join/${code}#Intent;scheme=hearo;package=com.janferber.eartrainer;S.browser_fallback_url=${encodeURIComponent(store)};end`
+      : `hearo://join/${code}`;
+  } else {
+    open.hidden = true;
+  }
+</script>
+</body>
+</html>
